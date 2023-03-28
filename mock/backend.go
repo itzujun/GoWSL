@@ -3,6 +3,7 @@
 package mock
 
 import (
+	"fmt"
 	"path/filepath"
 )
 
@@ -13,6 +14,9 @@ type Backend struct {
 
 // New constructs a new mocked back-end for WSL.
 func New() *Backend {
+	str := fmt.Sprintf("afaf %s", 12345678)
+	fmt.Println(str)
+
 	return &Backend{
 		lxssRootKey: &RegistryKey{
 			path: lxssPath,
