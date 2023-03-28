@@ -1,6 +1,5 @@
 name: Check if CLA is signed
-on:
-  pull_request_target:
+on: [push]
 
 jobs:
   cla-check:
